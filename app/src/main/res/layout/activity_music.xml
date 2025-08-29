@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav.MusicActivity"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textSize="30sp"
+            android:textColor="#3F51B5"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp" />
+
+        <!-- Upload Song Button -->
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/upload_song_button"
+            android:text="Upload Song"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <!-- Music List Button -->
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/music_list"
+            android:text="@string/music_list"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="#45FFFFFF"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

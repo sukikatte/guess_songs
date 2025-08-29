@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicListActivity"
+    android:orientation="vertical">
+
+    <!-- Search and Music List Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/search_by_title_artist"
+            android:padding="10dp" />
+
+        <android.widget.Button
+            android:id="@+id/search_button"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_background"
+            android:baselineAligned="false"
+            android:padding="10dp"
+            android:text="@string/search"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Music List -->
+    <ListView
+        android:id="@+id/music_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Bottom Music Player Section -->
+    <LinearLayout
+        android:id="@+id/musicPlayerSection"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#45FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Song Info -->
+        <ImageView
+            android:id="@+id/musicPlayer_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar_default"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/musicPlayer_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/musicPlayer_artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Control Buttons -->
+        <ImageView
+            android:id="@+id/musicPlayer_previous"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/previous"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/musicPlayer_playPause"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/play"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:id="@+id/musicPlayer_next"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/next"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

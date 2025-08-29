@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        app:layout_constraintBottom_toTopOf="@+id/bottom1"
+         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/local_bottom_musicPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/local_bottom_musicPlayer_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/avatar_default" />
+
+            <TextView
+                android:id="@+id/local_bottom_musicPlayer_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/local_bottom_musicPlayer_image"
+                android:text="Title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/local_bottom_musicPlayer_authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/local_bottom_musicPlayer_songName"
+                android:layout_alignLeft="@id/local_bottom_musicPlayer_songName"
+                android:text="Artist"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/local_bottom_musicPlayer_next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/local_bottom_musicPlayer_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="80dp"
+                android:layout_toLeftOf="@id/local_bottom_musicPlayer_next"
+                android:src="@drawable/play" />
+
+
+            <ImageView
+                android:id="@+id/local_bottom_musicPlayer_previous"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="135dp"
+                android:layout_toLeftOf="@id/local_bottom_musicPlayer_play"
+                android:src="@drawable/previous" />
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        app:layout_constraintBottom_toTopOf="@+id/bottom1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>

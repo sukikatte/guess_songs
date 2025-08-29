@@ -1,0 +1,6 @@
+<!-- edittext_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#77FFFFFF" /> <!-- 白色背景 -->
+    <corners android:radius="8dp" /> <!-- 圆角 -->
+    <stroke android:color="#3F51B5" android:width="2dp" /> <!-- 蓝色边框 -->
+</shape>

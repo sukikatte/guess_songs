@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "449551776956",
+    "firebase_url": "https://guess-songs-7513e-default-rtdb.firebaseio.com",
+    "project_id": "guess-songs-7513e",
+    "storage_bucket": "guess-songs-7513e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449551776956:android:368ff95bebcacdfb6ae4b9",
+        "android_client_info": {
+          "package_name": "com.example.guesssongs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrzCqDarqws-_HyQSALO7vPndEjlmk51s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

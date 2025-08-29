@@ -1,0 +1,73 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav.ProfileActivity"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="649dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <!-- Welcome message and username -->
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Welcome, Guest"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:padding="10dp" />
+
+        <!-- Image showing QR code -->
+        <ImageView
+            android:id="@+id/payment_qr_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Payment QR Code"
+            android:src="@drawable/payment_qr_image" />
+
+        <!-- Text to describe QR code -->
+        <TextView
+            android:id="@+id/support_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/scan_to_support_the_creator"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Logout Button -->
+        <android.widget.Button
+            android:id="@+id/Logout"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_background"
+            android:text="@string/log_out"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="#45FFFFFF"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".competitiveMode.CompetitiveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:textColor="#3F51B5"
+                android:layout_marginRight="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time_couting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time counting："
+                android:textSize="20sp"
+                android:textColor="#3F51B5"
+                android:layout_marginTop="16dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="player1：null"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/player1Score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="totalscore：0"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/player2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="player2：null"
+                android:textSize="15sp"
+                android:textColor="#3F51B5"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/player2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="totalscore：0"
+                android:textSize="15sp"
+                android:textColor="#3F51B5"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/player3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="player3：null"
+                android:textSize="15sp"
+                android:textColor="#3F51B5"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/player3Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="totalscore：0"
+                android:textSize="15sp"
+                android:textColor="#3F51B5"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"  />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这首歌的歌手是？"
+            android:textSize="24sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp" />
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionA"
+            android:text="选项 A"
+            android:layout_margin="10dp" />
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionB"
+            android:text="选项 B"
+            android:layout_margin="10dp" />
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionC"
+            android:text="选项 C"
+            android:layout_margin="10dp"/>
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionD"
+            android:text="选项 D"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

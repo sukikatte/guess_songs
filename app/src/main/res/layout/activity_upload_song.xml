@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".UploadSongActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Song Title Input -->
+        <EditText
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Song Title"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp" />
+
+        <!-- Song Artist Input -->
+        <EditText
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Song Artist"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp" />
+
+        <!-- Music URL Input -->
+        <EditText
+            android:id="@+id/music_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Music URL"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="80dp"
+            android:textSize="18sp" />
+
+        <!-- Upload Button -->
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/upload_song_button"
+            android:layout_marginTop="20dp"
+            android:text="Upload Song"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

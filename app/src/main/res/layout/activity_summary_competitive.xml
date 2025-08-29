@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".competitiveMode.SummaryCompetitiveActivity"
+    android:padding="16dp">
+
+    <!-- Game Over Title -->
+    <TextView
+        android:id="@+id/summaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- Players Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/summaryTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <!-- Player 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1: null"
+                android:textSize="20sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/player1Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Player 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/player2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2: null"
+                android:textSize="20sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/player2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Player 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/player3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 3: null"
+                android:textSize="20sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/player3Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <android.widget.Button
+            android:id="@+id/restartGameButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background"
+            android:onClick="onRestartGameClick"
+            android:text="Restart Game"
+            android:textColor="@color/white" />
+
+        <!-- Return to Menu Button -->
+        <android.widget.Button
+            android:id="@+id/returnToMenuButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_background"
+            android:onClick="onReturnToMenuClick"
+            android:text="Return to Menu"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

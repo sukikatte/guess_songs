@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GuessSongs"
+        tools:targetApi="31">
+        <activity
+            android:name=".log.RegisterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".nav.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ManualActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".SummaryActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".EndlessActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".competitiveMode.CompetitiveActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".competitiveMode.RoomActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".competitiveMode.RoomStateActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MusicListActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".competitiveMode.SummaryCompetitiveActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".nav.ProfileActivity"
+            android:exported="false"/>
+        <activity android:name=".nav.MusicActivity"
+            android:exported="false"/>
+        <activity android:name=".UploadSongActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".log.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

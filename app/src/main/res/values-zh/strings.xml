@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">猜歌游戏</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="passwordre">密码:</string>
+    <string name="usernamere">昵称:</string>
+    <string name="enter_your_username">请在此输入昵称</string>
+    <string name="enter_your_password">请在此输入密码</string>
+    <string name="welcome_to_guess_songs">欢迎来到猜歌游戏!</string>
+    <string name="search">搜索</string>
+    <string name="search_by_title_artist">输入歌手/歌曲以检索</string>
+    <string name="create_a_new_account">创建新账户</string>
+    <string name="confirm">创建</string>
+    <string name="go_back">返回</string>
+    <string name="game">游戏</string>
+    <string name="music">曲库</string>
+    <string name="profile">主页</string>
+    <string name="competitive">多人模式</string>
+    <string name="leaderboard">排行榜</string>
+    <string name="endless">无尽模式</string>
+    <string name="classic">经典模式</string>
+    <string name="manual">规则介绍</string>
+    <string name="scan_to_support_the_creator">扫码救济我</string>
+    <string name="log_out">退出登录</string>
+    <string name="music_list">音乐库列表</string>
+</resources>

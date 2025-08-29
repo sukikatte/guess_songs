@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+            <android.widget.Button
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:id="@+id/next_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="change a question"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="1/10"
+                android:textColor="#3F51B5"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:id="@+id/score_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="totalscore:0"
+                android:textSize="20sp"
+                android:textColor="#3F51B5"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:id="@+id/time_couting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time counting:"
+                android:textSize="20sp"
+                android:textColor="#3F51B5"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这首歌的歌手是？"
+            android:textSize="24sp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="30dp" />
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionA"
+            android:text="选项 A"
+            android:layout_margin="10dp"/>
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionB"
+            android:text="选项 B"
+            android:layout_margin="10dp" />
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionC"
+            android:text="选项 C"
+            android:layout_margin="10dp"/>
+
+        <android.widget.Button
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/optionD"
+            android:text="选项 D"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
